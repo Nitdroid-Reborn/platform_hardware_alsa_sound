@@ -263,12 +263,10 @@ size_t AudioHardwareALSA::getInputBufferSize(uint32_t sampleRate, int format, in
     switch(sampleRate) {
     case 8000:
     case 11025:
-        res = 320;
-        break;
     case 16000:
     case 22050:
     case 44100:
-        res = 160;
+        res = 4096;
         break;
     default:
         LOGW("getInputBufferSize bad sampling rate: %d", sampleRate);
