@@ -87,7 +87,7 @@ endif
   	liblog
 
   LOCAL_MODULE:= alsa.default
-
+  LOCAL_MODULE_TAGS := optional
   include $(BUILD_SHARED_LIBRARY)
 
 # This is the default Acoustics module which is essentially a stub
@@ -107,7 +107,7 @@ endif
   LOCAL_SHARED_LIBRARIES := liblog
 
   LOCAL_MODULE:= acoustics.default
-
+  LOCAL_MODULE_TAGS := optional
   include $(BUILD_SHARED_LIBRARY)
 
 endif
